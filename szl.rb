@@ -20,10 +20,11 @@ class Szl < Formula
   # "szl --print_code --native". We can use it if it's installed later.
   depends_on "binutils" => :optional
 
+  needs :cxx11
+
   def install
-    if build.head?
-      system "./autogen.sh", "-f"
-    end
+    ENV.cxx11
+    system "autoreconf", "-fvi" if build.head?
     system "./configure", "--disable-dependency-tracking",
                           "--disable-debug",
                           "--disable-rpath",
