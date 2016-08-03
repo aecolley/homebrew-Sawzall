@@ -2,7 +2,6 @@ class Szl < Formula
   desc "Google's Sawzall language for statistical aggregation of log data."
   homepage "https://bitbucket.org/aecolley/szl"
   url "https://bitbucket.org/aecolley/szl/downloads/szl-1.0.1.tar.gz"
-  sha1 "9a5f0f1914781a7ca8f80896124c1a39bae329f2"
   sha256 "791ff01fbf72fb3ad0c4e49a8de40dc3d7822fe549ee94d11ea7226557c0e013"
 
   head do
