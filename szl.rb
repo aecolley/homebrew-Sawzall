@@ -40,7 +40,7 @@ class Szl < Formula
         if (match("<[Pp]>", string(input)))
           emit t <- 1;',
       "--table_output=t",
-      "#{doc}/sawzall-spec.html"
+      "#{doc}/sawzall-spec.html",
     ]
     output, status = Open3.capture2("#{bin}/szl", *args)
     assert_equal 0, status
