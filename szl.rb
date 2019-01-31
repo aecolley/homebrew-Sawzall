@@ -6,20 +6,18 @@ class Szl < Formula
 
   head do
     url "https://bitbucket.org/aecolley/szl", :using => :hg
-    depends_on "automake" => :build
     depends_on "autoconf" => :build
+    depends_on "automake" => :build
     depends_on "libtool" => :build
   end
 
   depends_on "icu4c"
+  depends_on "pcre"
   depends_on "protobuf"
   depends_on "protobuf-c"
-  depends_on "pcre"
   # We don't need gobjdump for core functionality, but only for
   # "szl --print_code --native". We can use it if it's installed later.
   depends_on "binutils" => :optional
-
-  needs :cxx11
 
   def install
     ENV.cxx11
