@@ -1,8 +1,8 @@
 class Szl < Formula
   desc "Google's Sawzall language for statistical aggregation of log data."
   homepage "https://bitbucket.org/aecolley/szl"
-  url "https://bitbucket.org/aecolley/szl/downloads/szl-1.0.1.tar.gz"
-  sha256 "791ff01fbf72fb3ad0c4e49a8de40dc3d7822fe549ee94d11ea7226557c0e013"
+  url "https://bitbucket.org/aecolley/szl/downloads/szl-1.0.2.tar.gz"
+  sha256 "77d315aebd97dbb7652f10261d5d5150b808dd96b9ac6f98d0d4aff482382f3d"
 
   head do
     url "https://bitbucket.org/aecolley/szl", :using => :hg
